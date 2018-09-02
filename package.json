@@ -96,6 +96,7 @@
     "font-awesome": "^4.6.3",
     "fs-extra": "^0.30.0",
     "html-webpack-plugin": "^2.22.0",
+    "http-server": "^0.11.1",
     "imports-loader": "^0.6.5",
     "ip": "^1.1.2",
     "isomorphic-fetch": "^2.2.1",
