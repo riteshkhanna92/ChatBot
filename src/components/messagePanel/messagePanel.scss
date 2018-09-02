@@ -1,0 +1,19 @@
+.card{
+    border: 0px;
+    .send{
+
+    }
+    .receive{
+        background: #efefee;
+        border-radius: 10px 10px 10px 0px;
+        margin: 10px 0px;
+    }
+    ul{
+        list-style: none;
+        li{
+            // margin-top :20px;
+            // margin-bottom :20px;
+            padding:20px;
+        }
+    }
+}

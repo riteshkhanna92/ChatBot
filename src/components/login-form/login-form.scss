@@ -1,0 +1,269 @@
+/* start css for form */
+.ChatUI *{box-sizing:border-box}
+.ChatUI{
+	margin: 28px  auto;
+	padding:10px;
+	/*border-radius:10px;
+	border:1px solid rgb(204,204,204);*/
+	/*width:300px;*/
+	height: 580px;
+	font-family: Arial;
+	position:relative;
+}
+
+.ChatUI .close2{
+	float: right;
+	display: none;
+}
+
+.ChatUI .close{
+	float: right;
+	display: none;
+	margin-top: 2px;
+}
+
+.ChatUI .title {
+	margin:0px 10px 5px;
+	color:#330066;
+	font-family: Arial;
+	font-size:16px;
+	font-weight:bold
+}
+.ChatUI .transcript {
+	padding:5px;
+	/*height:200px;*/
+	height:85%;
+	font-family: Arial;
+	display:none;
+	-ms-overflow-y:auto;
+	background-color:white;
+	overflow-y:scroll;
+}
+.ChatUI .transcript p{margin:3px 0px;padding:5px 10px;border-radius:8px;border:1px solid rgb(238,238,238);font-size:16px;display:none;-ms-word-wrap:break-word}
+.ChatUI .transcript p.system {
+	background-color:#66CC00;
+	text-align:center;
+	color:#ffffff;
+	font-family: Arial;
+	font-size:14px;
+	float:none;
+	margin-top: 0px;
+}
+.ChatUI .transcript p.system .name{display:none}
+.ChatUI .transcript .name{font-family: Arial;font-size:14px;display:block}
+.ChatUI .transcript .them{text-align:left;clear:both;font-family:Arial;font-size:16px;float:left;background-color:#8c68a6;color:#ffffff;}
+.ChatUI .transcript .them .name{padding-right:14px;font-style:italic}
+.ChatUI .transcript .you{text-align:right;clear:both;font-family:Arial;font-size:16px;float:right;background-color:#ffffff;color:#666;}
+.ChatUI .transcript .you .name{font-style:italic}
+.ChatUI .isTyping{height:1em;bottom:3px;color:rgb(153,153,153);font-size:10px;font-style:italic;display:none;position:absolute}
+.ChatUI .input {
+	padding:5px;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	font-family:Arial;font-size:12px;
+	resize:none
+}
+
+.ChatUI .disabled.input {
+	opacity:0.5
+}
+
+.ChatUI .input-container {
+	height:50px;
+	margin-top:8px;
+	display:none
+}
+
+.ChatUI .send {
+	padding:2px;
+	border:1px solid rgb(204,204,204);
+	width:60px;
+	height:30px;
+	float:right;
+	display:none;
+	cursor:pointer;
+	border-bottom-right-radius:7px;
+	background-color:#ffffff;
+}
+
+.ShowSend.ChatUI .send {
+	display:block
+}
+
+.ShowSend.ChatUI .input {
+	width:250px;
+	border-bottom-right-radius:0px
+}
+
+.ChatUI .form {
+	padding:5px;
+	min-height:580px;
+	-ms-overflow-x:hidden;
+	-ms-overflow-y:auto;
+	background-color:white;
+	margin: 20px 15px;
+}
+
+.ChatUI .form label {
+	font-family: Arial;
+	font-size:12px;
+	margin-top:8px;
+	display:block
+}
+
+.ChatUI .form label span {
+	padding-right:5px;
+	padding-bottom:2px;
+	display:inline-block
+}
+
+.ChatUI .form label input, select, textarea {
+	border:1px solid rgb(187,187,187);
+	padding-left:8px;
+	margin-right:6px;
+	display:inline-block;
+	
+}
+
+.ChatUI .form label input[type='text'], select {
+	width:100%;
+	height:27px;
+}
+
+/*.ChatUI .form label input[type='text'], select option:disabled {
+	color: #bcbcbc;
+}*/
+
+.ChatUI .form label textarea {
+	height:54px;
+	width:100%;
+}
+
+
+
+.ChatUI .form label input[type='radio'] {
+
+}
+
+.ChatUI .form label input.error {
+	border-color:red
+}
+
+.ChatUI .form .submit {
+	border:1px solid rgb(204,204,204);
+	width:100%;
+	height:32px;
+	margin-top:11px;
+	background-color:#330066;
+	color: #ffffff;
+	font-weight:bold;
+}
+
+.ChatUI .end{
+	width:20px;
+	height:20px;
+	position:absolute;
+	cursor:pointer;
+	opacity:0.3;
+	background-image:url("data:image/png;base64,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")
+}
+
+.ChatUI .end:hover {
+	opacity:1
+}
+
+.settings-group {
+	display:none
+}
+
+
+.ChatUI .transcript .you > span,.ChatUI .transcript .them > span {
+
+}
+
+.ChatUI .error {
+	border: 1px solid red;
+}
+
+.ChatUI label.error {
+	display: inline;
+	margin-top: 0px;
+	border: 0;
+	margin: 0;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: bottom;
+	color: red;
+	float: right;
+}
+
+.ChatUI .form label select.error {
+    border: 1px solid red;
+}
+
+
+.ChatUI .instructions {
+	font-family: Arial;
+	font-size: 12px;
+	padding: 4px 0px 4px 0px;
+}
+
+.ChatUI .logo_bar {
+    position: fixed;
+    display:none;
+    top: 8px;
+    left: 8px;
+    padding-right: 3px;
+    padding-bottom: 2px; 
+	z-index:100000;
+	width:100%;
+	border: 0px solid red;
+	background-color: #fff;
+	text-align: left;
+	vertical-align: top;
+  border-bottom: 1px solid #DAE1E9;
+}
+
+.logo_bar img {
+    margin-right: 8px;
+    float: left;
+}
+
+#livechat {
+	font-family: Roboto, Arial, sans-serif;
+	color: #434A52;
+	font-size: 24px;
+	padding-bottom: 5px;
+	display: inline-block;
+    padding-left: 0px;
+    font-weight: lighter;
+    margin-top: 2px
+}
+/* end form css */
+
+.msg-content-data{
+    flex-direction: column;
+    display: flex;
+}
+
+.chat-body .msg-content-data .msg-header{
+    font-weight: bold;
+    margin: 9px 0px;
+    text-transform: capitalize;
+}
+
+.msg-content-data > .msg-content-data{
+    padding: 6px;
+    background: rgba(128,128,128,0.1);
+    border-radius: 8px;
+}
+
+.msg-content-data > .msg-content:first-of-type{
+    font-weight: bold;
+}
+
+.msg-table-head {
+    display: none;
+}

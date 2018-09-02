@@ -1,0 +1,35 @@
+.gist{
+    h5{
+        margin-top:0px !important;
+    }
+    .card{
+    margin:40px 0px;
+    display: flex;
+    align-items: left;
+    border: none;
+    padding: 20px;
+    ul{
+        margin: 0px;
+        padding: 14px;
+        li{
+            font-size: 12px;
+            padding:4px;
+            list-style: disc;
+        }
+    }
+    .profile-img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    a{
+        color:#000;
+        text-decoration: none;
+        &:active{
+            color:#000;
+            text-decoration: none;
+        }
+    }
+  }
+
+}

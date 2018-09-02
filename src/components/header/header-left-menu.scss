@@ -1,0 +1,19 @@
+.hambuger{
+    margin-right: 33px;
+    height: 60px;
+    width: 60px;
+    background-color: #66CC00!important;
+}
+a.navbar-brand.hambuger.pull-left.btn.btn-primary.dropdown-toggle {
+    border: 1px solid transparent;border-radius:0;
+}
+.navbar-header {
+    display: inline-block;
+    float: left;
+}
+.customtoptgl li{padding:5px 10px;cursor:pointer}
+.customtoptgl li:hover{background:#e2e0e0;}
+.customtoptgl li label{font-weight:normal}
+.customtoptgl li span{margin-left:10px;vertical-align: text-bottom;}
+ul.dropdown-menu.customtoptgl {
+    top: 58px;}

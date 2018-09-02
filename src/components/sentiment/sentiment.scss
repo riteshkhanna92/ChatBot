@@ -1,0 +1,21 @@
+.card{
+    margin:40px 0px;
+    display: flex;
+    align-items: left;
+    border: none;
+    padding: 20px;
+    .sentiment-para{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+    a{
+        color:#000;
+        text-decoration: none;
+        &:active{
+            color:#000;
+            text-decoration: none;
+        }
+    }
+  }
